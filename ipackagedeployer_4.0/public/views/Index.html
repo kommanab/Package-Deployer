@@ -1,0 +1,195 @@
+﻿<!doctype html>
+<html ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>package deployer</title>
+  <link href="../stylesheets/css/bootstrap.css" rel="stylesheet" />
+  <style>
+    /*!
+    * IE10 viewport hack for Surface/desktop Windows 8 bug
+    * Copyright 2014-2015 Twitter, Inc.
+    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+    */
+
+    /*
+    * See the Getting Started docs for more information:
+    * http://getbootstrap.com/getting-started/#support-ie10-width
+    */
+    @-ms-viewport {
+      width: device-width;
+    }
+
+    @-o-viewport {
+      width: device-width;
+    }
+
+    @viewport {
+      width: device-width;
+    }
+
+    .error-messages.ng-active {
+      background: maroon;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      margin-top: 15px;
+      position: relative;
+    }
+
+      .error-messages.ng-active:after {
+        position: absolute;
+        top: -10px;
+        content: "";
+        left: 20px;
+        border-style: solid;
+        border-color: transparent transparent maroon;
+        border-width: 5px;
+      }
+  </style>
+  <link href="../stylesheets/site.css" rel="stylesheet" />
+  <script src="../js/angular.js"></script>
+  <script src="../js/angular-messages.js"></script>
+  <script src="../controller/IndexController.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">I-Deployer</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar">
+        <ul class="nav nav-sidebar">
+          <li class="active"><a href="#">Create Package <span class="sr-only">(current)</span></a></li>
+        </ul>
+
+      </div>
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <h1 class="page-header">Package Deployer - Create</h1>
+
+        <form name="my_form" class="form-horizontal col-sm-12" ng-controller="settingsController" novalidate>
+          <div class="form-group">
+            <label class="control-label col-sm-3" for="id_ipaddress">Ip Address :</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="id_ipaddress" name="ipaddress" placeholder="Ip address" ng-model="machineip"  ng-maxlength="15" ng-pattern="/^([0-9]{1,3})[.]([0-9]{1,3})[.]([0-9]{1,3})[.]([0-9]{1,3})$/" required>
+              <div class="error-messages" ng-if="interacted(my_form.ipaddress)" ng-messages="my_form.ipaddress.$error">
+                <div ng-message="required">You did not enter ipaddress for a node machine</div>
+              <div ng-message="maxlength">ipaddress cannot more than 15 character</div>
+                <div ng-message="pattern">ipaddress not is ip4 format (0.0.0.0)</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-3" for="machinename">Node name :</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="machinename" name="machinename" placeholder="Node Name" ng-model="machinename" maxlength="20" required>
+              <div class="error-messages" ng-if="interacted(my_form.machinename)" ng-messages="my_form.machinename.$error" ng-messages-include="form-messages">
+                <div ng-message="required">You did not enter name for a node machine</div>
+                <div ng-message="maxlength">name cannot more than 20 character</div>
+              </div>
+            </div>
+          </div>
+
+          <!--<div class="col-sm-offset-3 col-sm-12">
+            <div class="form-check col-sm-4">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" ng-model="selectedTech" value="Role" ng-change="onTechSelect()"> Role Base
+              </label>
+            </div>
+
+            <div class="form-check col-sm-4">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" ng-model="selectedTech" value="Custom" ng-change="onTechSelect()"> Custom Packages
+              </label>
+            </div>
+
+          </div>-->
+          <div class="form-group">
+            <label class="control-label col-sm-3" for="machinename">Select packages :</label>
+            <div class="col-sm-6">
+            
+              <div ng-repeat="x in tools" class="form-check col-sm-4">              
+                  <input class="form-check-input" type="checkbox" ng-model="x.isChecked"> {{x.name}}        
+              </div>
+
+            <!--<div class="form-check col-sm-4">              
+                <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" ng-model="selectedTech" value="Custom" ng-change="onTechSelect()">              
+            </div>-->
+
+          </div>
+          </div>
+
+          <!--<div class="form-group">
+            <label class="control-label col-sm-3" for="pwd">Select Package :</label>
+            <div class="col-sm-6">
+              <select class="form-control" name="package" ng-model="selectedPackage" ng-options="x.name for x in tools" required></select>
+              <div class="error-messages" ng-if="interacted(my_form.package)" ng-messages="my_form.package.$error" ng-messages-include="form-messages">              
+                <div ng-message="required">Please select a package</div>
+              </div>
+            </div>
+          </div>-->
+          <div class="form-group">
+            <div class="col-sm-offset-5 col-sm-2">
+                 <input type="button" class="btn btn-success btn-block" ng-click="newPackage()" ng-disabled="createMode" value="New Package" />
+              </div>
+              <div class="col-sm-2">
+                <input type="button" class="btn btn-success btn-block" ng-click="addPackage()" ng-disabled="my_form.$invalid" value="Add" />                
+              </div>
+            </div>
+
+          <!-- Table-->
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-7">
+
+              <table class="table">
+                <tr>
+                  <th>Id</th>
+                  <th>Machine Name</th>
+                  <th>Packages</th>
+                  <th><span>Action</span></th>
+                </tr>
+                <tr ng-repeat="package in packages">
+                  <td>
+                    <span>{{ package.ip }}</span>
+                  </td>
+                  <td>
+                    <span>{{package.name }}</span>
+                  </td>
+                  <td><span>{{ package.packageNames}}</span></td>
+                  <td>
+                    <a class="btn btn-success btn-block" ng-click="deletePackage($index)">Delete</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-7 col-sm-2">
+              <input type="submit" class="btn btn-success btn-block" ng-disabled="packages.length===0" ng-click="submitTask()" value="Submit" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

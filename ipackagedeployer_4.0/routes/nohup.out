@@ -1,0 +1,66 @@
+
+> ipackagedeployer@0.0.1 prestart /home/scripts/ipackagedeployer_3.0
+> npm run build
+
+
+> ipackagedeployer@0.0.1 build /home/scripts/ipackagedeployer_3.0
+> tsc
+
+
+> ipackagedeployer@0.0.1 start /home/scripts/ipackagedeployer_3.0
+> node app.js
+
+Express server listening on port 3200
+[0mGET / [36m304 [0m4.969 ms - -[0m
+[0mGET / [36m304 [0m0.810 ms - -[0m
+[0mPOST /api/cheftasks [32m200 [0m6.148 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.734 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.232 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.254 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.584 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.506 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.456 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.447 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.289 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.468 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.481 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.408 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.646 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.548 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m1.320 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.488 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m1.175 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.342 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m5.511 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.480 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.696 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m1.419 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.570 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.466 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.503 ms - 0[0m
+[0mGET / [36m304 [0m1.426 ms - -[0m
+[0mPOST /api/cheftasks [32m200 [0m0.454 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.457 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.552 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.251 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.391 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.524 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.268 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.432 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.459 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.441 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.509 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.936 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.527 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m8.733 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.997 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.952 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.459 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.969 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.747 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.586 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.314 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.310 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.383 ms - 0[0m
+[0mGET / [32m200 [0m7.111 ms - 10279[0m
+[0mGET /favicon.ico [33m404 [0m5.121 ms - 190[0m

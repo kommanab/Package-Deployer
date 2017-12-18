@@ -1,0 +1,250 @@
+
+> ipackagedeployer@0.0.1 prestart /home/scripts/ipackagedeployer_3.0
+> npm run build
+
+
+> ipackagedeployer@0.0.1 build /home/scripts/ipackagedeployer_3.0
+> tsc
+
+
+> ipackagedeployer@0.0.1 start /home/scripts/ipackagedeployer_3.0
+> node app.js
+
+Express server listening on port 3200
+
+> ipackagedeployer@0.0.1 prestart /home/scripts/ipackagedeployer_3.0
+> npm run build
+
+
+> ipackagedeployer@0.0.1 build /home/scripts/ipackagedeployer_3.0
+> tsc
+
+
+> ipackagedeployer@0.0.1 prestart /home/scripts/ipackagedeployer_3.0
+> npm run build
+
+
+> ipackagedeployer@0.0.1 build /home/scripts/ipackagedeployer_3.0
+> tsc
+
+
+> ipackagedeployer@0.0.1 start /home/scripts/ipackagedeployer_3.0
+> node app.js
+
+Express server listening on port 3200
+[0mGET / [32m200 [0m7.758 ms - 10279[0m
+[0mGET /favicon.ico [33m404 [0m11.517 ms - 190[0m
+[0mPOST /api/cheftasks [32m200 [0m1.901 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.571 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.562 ms - 0[0m
+[0mGET / [36m304 [0m1.297 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m1.117 ms - 190[0m
+[0mPOST /api/cheftasks [32m200 [0m0.387 ms - 0[0m
+[0mGET / [36m304 [0m0.720 ms - -[0m
+[0mPOST /api/cheftasks [32m200 [0m0.198 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.436 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.391 ms - 0[0m
+
+> ipackagedeployer@0.0.1 prestart /home/scripts/ipackagedeployer_3.0
+> npm run build
+
+
+> ipackagedeployer@0.0.1 build /home/scripts/ipackagedeployer_3.0
+> tsc
+
+
+> ipackagedeployer@0.0.1 start /home/scripts/ipackagedeployer_3.0
+> node app.js
+
+Express server listening on port 3200
+[0mGET / [36m304 [0m8.075 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m10.617 ms - 190[0m
+[0mGET / [36m304 [0m1.576 ms - -[0m
+[0mGET / [36m304 [0m0.991 ms - -[0m
+[0mPOST /api/cheftasks [32m200 [0m0.769 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m1.482 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.435 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.225 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.490 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.302 ms - 0[0m
+
+> ipackagedeployer@0.0.1 prestart /home/scripts/ipackagedeployer_3.0
+> npm run build
+
+
+> ipackagedeployer@0.0.1 build /home/scripts/ipackagedeployer_3.0
+> tsc
+
+
+> ipackagedeployer@0.0.1 start /home/scripts/ipackagedeployer_3.0
+> node app.js
+
+Express server listening on port 3200
+[0mGET / [32m200 [0m8.745 ms - 10437[0m
+[0mPOST /api/cheftasks [32m200 [0m5.949 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m1.730 ms - 0[0m
+[0mGET / [36m304 [0m0.933 ms - -[0m
+[0mPOST /api/cheftasks [32m200 [0m1.151 ms - 0[0m
+[0mGET / [32m200 [0m2.909 ms - 10432[0m
+[0mPOST /api/cheftasks [32m200 [0m0.407 ms - 0[0m
+[0mGET / [36m304 [0m0.723 ms - -[0m
+[0mPOST /api/cheftasks [32m200 [0m0.587 ms - 0[0m
+
+> ipackagedeployer@0.0.1 prestart /home/scripts/ipackagedeployer_3.0
+> npm run build
+
+
+> ipackagedeployer@0.0.1 build /home/scripts/ipackagedeployer_3.0
+> tsc
+
+
+> ipackagedeployer@0.0.1 start /home/scripts/ipackagedeployer_3.0
+> node app.js
+
+events.js:160
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at Server._listen2 (net.js:1262:14)
+    at listen (net.js:1298:10)
+    at Server.listen (net.js:1394:5)
+    at EventEmitter.listen (/home/scripts/ipackagedeployer_3.0/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/scripts/ipackagedeployer_3.0/app.js:52:18)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+
+npm ERR! Linux 3.10.0-693.5.2.el7.x86_64
+npm ERR! argv "/usr/bin/node" "/usr/bin/npm" "start"
+npm ERR! node v6.12.1
+npm ERR! npm  v3.10.10
+npm ERR! code ELIFECYCLE
+npm ERR! ipackagedeployer@0.0.1 start: `node app.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the ipackagedeployer@0.0.1 start script 'node app.js'.
+npm ERR! Make sure you have the latest version of node.js and npm installed.
+npm ERR! If you do, this is most likely a problem with the ipackagedeployer package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     node app.js
+npm ERR! You can get information on how to open an issue for this project with:
+npm ERR!     npm bugs ipackagedeployer
+npm ERR! Or if that isn't available, you can get their info via:
+npm ERR!     npm owner ls ipackagedeployer
+npm ERR! There is likely additional logging output above.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /home/scripts/ipackagedeployer_3.0/npm-debug.log
+[0mGET / [36m304 [0m0.538 ms - -[0m
+[0mPOST /api/cheftasks [32m200 [0m0.493 ms - 0[0m
+[0mGET / [36m304 [0m0.487 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m10.986 ms - 190[0m
+[0mPOST /api/cheftasks [32m200 [0m0.335 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.332 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.355 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.544 ms - 0[0m
+[0mGET / [36m304 [0m40.109 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m15.655 ms - 190[0m
+
+> ipackagedeployer@0.0.1 prestart /home/scripts/ipackagedeployer_4.0
+> npm run build
+
+
+> ipackagedeployer@0.0.1 build /home/scripts/ipackagedeployer_4.0
+> tsc
+
+
+> ipackagedeployer@0.0.1 start /home/scripts/ipackagedeployer_4.0
+> node app.js
+
+Express server listening on port 3200
+[0mGET / [36m304 [0m5.620 ms - -[0m
+[0mPOST /api/cheftasks [32m200 [0m5.669 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m1.452 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.531 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.366 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.410 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m1.472 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.338 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.400 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.666 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.605 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m1.237 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.507 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.427 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.435 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m5.823 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.647 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.790 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.522 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.247 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.579 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.512 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.963 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m1.255 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.215 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.547 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.266 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.574 ms - 0[0m
+
+> ipackagedeployer@0.0.1 prestart /home/scripts/ipackagedeployer_4.0
+> npm run build
+
+
+> ipackagedeployer@0.0.1 build /home/scripts/ipackagedeployer_4.0
+> tsc
+
+
+> ipackagedeployer@0.0.1 start /home/scripts/ipackagedeployer_4.0
+> node app.js
+
+Express server listening on port 3200
+[0mGET / [36m304 [0m5.304 ms - -[0m
+[0mPOST /api/cheftasks [32m200 [0m5.743 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m1.120 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.584 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.298 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.252 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m1.065 ms - 0[0m
+[0mGET / [32m200 [0m15.516 ms - 8135[0m
+[0mGET /favicon.ico [33m404 [0m21.237 ms - 190[0m
+[0mPOST /api/cheftasks [32m200 [0m0.528 ms - 0[0m
+[0mGET / [36m304 [0m0.510 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m12.833 ms - 190[0m
+[0mPOST /api/cheftasks [32m200 [0m0.770 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.471 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.340 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.403 ms - 0[0m
+[0mGET / [36m304 [0m0.459 ms - -[0m
+[0mPOST /api/cheftasks [32m200 [0m0.765 ms - 0[0m
+[0mGET / [36m304 [0m1.441 ms - -[0m
+
+> ipackagedeployer@0.0.1 prestart /home/scripts/ipackagedeployer_5.0
+> npm run build
+
+
+> ipackagedeployer@0.0.1 build /home/scripts/ipackagedeployer_5.0
+> tsc
+
+
+> ipackagedeployer@0.0.1 start /home/scripts/ipackagedeployer_5.0
+> node app.js
+
+Express server listening on port 3200
+[0mGET / [36m304 [0m5.355 ms - -[0m
+[0mPOST /api/cheftasks [32m200 [0m5.416 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m1.175 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.364 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m1.719 ms - 0[0m
+[0mGET / [32m200 [0m1.473 ms - 8358[0m
+[0mGET /favicon.ico [33m404 [0m4.231 ms - 190[0m
+[0mGET / [32m200 [0m0.688 ms - 8358[0m
+[0mGET /favicon.ico [33m404 [0m1.044 ms - 190[0m
+[0mGET / [32m200 [0m0.669 ms - 8358[0m
+[0mGET /favicon.ico [33m404 [0m0.849 ms - 190[0m
+[0mPOST /api/cheftasks [32m200 [0m0.601 ms - 0[0m
+[0mPOST /api/cheftasks [32m200 [0m0.492 ms - 0[0m
